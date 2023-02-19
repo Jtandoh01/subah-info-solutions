@@ -29,7 +29,7 @@ app.get('/students/:studentId', (req, res) => {
 // Endpoint to register new student
 app.post('/students', (req, res) => {
   // Implementation to register new student
-  res.status(200).send('HELLO, YOU ARE ASSIGNED THE STUDENT ID ' + req.body.studentId+', ' +' CONGRATULATIONS .');
+  res.status(200).send('HELLO, YOU ARE ASSIGNED THE STUDENT ID ' + req.body.studentId+', ' +' CONGRATULATIONS.');
 });
 
 // Start server
