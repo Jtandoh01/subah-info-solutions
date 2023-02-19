@@ -13,9 +13,9 @@
     "express",
     "mongoode"
   ],
-  "author": "tandoh johnson",
+  "author": "TANDOH JOHNSON",
   "license": "MIT",
-  "github repo":"https://github.com/Jtandoh01/backend-project.git",
+  "github repo":"https://github.com/Jtandoh01/subah-info-solutions.git",
   "dependencies": {
     "body-parser": "^1.20.1",
     "dotenv": "^16.0.3",
