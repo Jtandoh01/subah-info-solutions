@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 mongoose.set('strictQuery', false);
-
+const { MONGODB_URI } = process.env; // Retrieve environment variable to vercel
 
 
 const studentRoutes = require('./routes/student');
