@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 mongoose.set('strictQuery', false);
 
 
+
 const studentRoutes = require('./routes/student');
 
 const app = express();
