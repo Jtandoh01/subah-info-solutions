@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Student = require('../models/student');
+const Student = require('../student');
 
 // GET request for retrieving student details by student id
 
