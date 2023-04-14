@@ -2,7 +2,8 @@ require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 mongoose.set('strictQuery', false);
-const { MONGODB_URI } = process.env; // Retrieve environment variable to vercel
+const  MONGODB_URI  = process.env; 
+const http = require('http');
 
 
 const studentRoutes = require('./route/studentRoutes');
@@ -22,17 +23,18 @@ mongoose
 app.use(express.json());
 
 // Endpoint to retrieve student details by ID
-app.get('/students/:studentId', (req, res) => {
+app.get('./student', (req, res) => {
   // Implementation to retrieve student details
-  res.status(200).send('HELLO, YOUR STUDENT ID IS: '+ req.params.studentId);
+  return res.status(200).send(id);
 });
+  
 
 // Endpoint to register new student
-app.post('/students', (req, res) => {
+app.post('./student', (req, res) => {
   // Implementation to register new student
-  res.status(200).send('HELLO, YOU ARE ASSIGNED THE STUDENT ID ' + req.body.studentId+', ' +' CONGRATULATIONS.');
+ return res.status(200).json().send();
 });
 
 // Start server
 const port = process.env.PORT || 3000;
-app.listen(port, () => console.log(`Server started on port ${port}`));
+app.listen(port, () => console.log(`Server started on  http://localhost:${port}`));
